@@ -3,143 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Muhammad Daffa Azura</title>
+    <title>CV - Muhammad Daffa Azura</title>
     <style>
-        /* Pengaturan dasar untuk CV ATS: hitam putih, margin rapi, satu kolom */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: #000000; /* Font hitam murni */
-            background-color: #ffffff;
-            margin: 0 auto;
+            line-height: 1.6;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
             max-width: 800px;
-            padding: 40px 20px;
-            line-height: 1.5;
+            margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            font-size: 24px;
-            text-transform: uppercase;
             margin-bottom: 5px;
+            text-transform: uppercase;
         }
         .contact-info {
             text-align: center;
-            font-size: 14px;
             margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
         }
         h2 {
-            font-size: 16px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
-            border-bottom: 1px solid #000000; /* Garis bawah hitam murni */
-            padding-bottom: 3px;
-            margin-top: 25px;
-            margin-bottom: 10px;
+            font-size: 18px;
         }
-        .experience-header, .education-header {
+        .section-item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
             margin-bottom: 5px;
         }
-        .title {
-            font-weight: bold;
-        }
-        .company {
+        .item-subheader {
             font-style: italic;
-        }
-        .date {
-            float: right; /* Membuat tanggal berada di sisi kanan */
-        }
-        /* Membersihkan float agar layout tidak berantakan */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+            margin-bottom: 10px;
         }
         ul {
-            margin-top: 5px;
-            margin-bottom: 15px;
+            margin: 0;
             padding-left: 20px;
         }
         li {
-            margin-bottom: 4px;
-            text-align: justify;
+            margin-bottom: 5px;
         }
-        p {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            text-align: justify;
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills-column {
+            flex: 1;
+            min-width: 250px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Identitas -->
+<div class="container">
+    <!-- BAGIAN HEADER / INFO KONTAK -->
     <h1>Muhammad Daffa Azura</h1>
     <div class="contact-info">
-        Jalan Lorong 5 Gang 5 Rt.5 Rw.5, Koja, Jakarta Utara, DKI Jakarta 14230[cite: 1]<br>
-        +62-812-8953-7380 | azuradaffa29@gmail.com[cite: 1]
+        Karawang, Jawa Barat, Indonesia | +62-812-8953-7380 | <a href="mailto:azuradaffa29@gmail.com">azuradaffa29@gmail.com</a>
     </div>
 
-    <!-- Ringkasan Profesional -->
-    <h2>Ringkasan</h2>
+    <!-- BAGIAN PROFIL / RINGKASAN -->
+    <h2>Profil Profesional</h2>
     <p>
-        Mahasiswa Sistem Informasi Telkom University yang bersemangat, analitis, dan memiliki minat besar di industri kopi dan layanan pelanggan[cite: 1]. Memiliki pengalaman langsung sebagai barista dan dasar-dasar kontrol kualitas yang ketat dari pengalaman magang sebelumnya[cite: 1]. Cepat belajar, mampu bekerja dalam tim, dan berkomitmen untuk menciptakan pengalaman terbaik bagi pelanggan dalam lingkungan kerja yang dinamis[cite: 1].
+        Mahasiswa Sistem Informasi Telkom University yang bersemangat, analitis, dan memiliki minat besar di industri kopi dan layanan pelanggan. Memiliki pengalaman langsung sebagai barista dan pemahaman dasar-dasar kontrol kualitas yang ketat dari pengalaman magang sebelumnya di industri manufaktur. Cepat belajar, mampu bekerja dalam tim, dan berkomitmen untuk menciptakan pengalaman terbaik bagi pelanggan serta menjaga standar kualitas operasional dalam lingkungan kerja yang dinamis.
     </p>
 
-    <!-- Pengalaman Kerja -->
-    <h2>Pengalaman Kerja</h2>
-
-    <div class="experience-header clearfix">
-        <span class="title">Part-Time Barista & All-Round Crew</span>
-        <span class="date">Januari 2024</span>
-    </div>
-    <div class="company">CAFE 93 ENTREPRISE[cite: 1]</div>
-    <ul>
-        <li>Menangani operasional kasir dan pembayaran pelanggan dengan akurat[cite: 1].</li>
-        <li>Menyiapkan dan membuat berbagai varian minuman kopi sesuai standar[cite: 1].</li>
-        <li>Melayani pelanggan dengan ramah dan memastikan kepuasan mereka[cite: 1].</li>
-        <li>Menjaga kebersihan dan kerapian area kerja[cite: 1].</li>
-    </ul>
-
-    <div class="experience-header clearfix">
-        <span class="title">Quality Control & Assurance Intern (Magang PKL)</span>
-        <span class="date">September 2023 - Maret 2024</span>
-    </div>
-    <div class="company">PT SUGIURA INDONESIA[cite: 1]</div>
-    <ul>
-        <li>Melakukan inspeksi kualitas material (coil, nut) menggunakan alat ukur presisi seperti mikrometer[cite: 1].</li>
-        <li>Memproses sample produk (cutting, grinding) untuk analisis kualitas lebih lanjut[cite: 1].</li>
-        <li>Bekerja dengan teliti mengikuti prosedur operasional standar (SOP) perusahaan[cite: 1].</li>
-    </ul>
-
-    <!-- Pendidikan -->
+    <!-- BAGIAN PENDIDIKAN -->
     <h2>Pendidikan</h2>
-
-    <div class="education-header clearfix">
-        <span class="title">S1 Sistem Informasi</span>
-        <span class="date">2025 - Sekarang</span>
+    <div class="section-item">
+        <div class="item-header">
+            <span>Telkom University</span>
+            <span>2025 - Sekarang</span>
+        </div>
+        <div class="item-subheader">S1 Sistem Informasi</div>
     </div>
-    <div class="company">Telkom University[cite: 1]</div>
-    <br>
-
-    <div class="education-header clearfix">
-        <span class="title">Teknik Mekatronika</span>
-        <span class="date">2022 - 2025</span>
-    </div>
-    <div class="company">SMKS TEXAR[cite: 1]</div>
-    <br>
-
-    <div class="education-header clearfix">
-        <span class="title">SMPI AL-I'TISHOM</span>
-        <span class="date">2019 - 2022</span>
+    
+    <div class="section-item">
+        <div class="item-header">
+            <span>SMKS TEXAR Klari Karawang</span>
+            <span>2022 - 2025</span>
+        </div>
+        <div class="item-subheader">Teknik Mekatronika</div>
     </div>
 
-    <!-- Keahlian -->
-    <h2>Keterampilan</h2>
-    <ul>
-        <li><strong>Layanan Pelanggan:</strong> Komunikatif, ramah, dan mampu menangani berbagai karakter pelanggan[cite: 1].</li>
-        <li><strong>Operasional:</strong> Dasar-dasar pembuatan kopi, operasional mesin kasir, dan perhatian terhadap detail[cite: 1].</li>
-        <li><strong>Manajemen Kerja:</strong> Terbiasa bekerja dengan ritme cepat (under pressure), cekatan, dan mampu berkolaborasi dalam tim[cite: 1].</li>
-        <li><strong>Teknis & IT:</strong> Kontrol kualitas (inspeksi material), dan kemampuan dasar IT[cite: 1].</li>
-        <li><strong>Bahasa:</strong> Bahasa Indonesia (Aktif/Penutur Asli), Bahasa Inggris (Dasar)[cite: 1].</li>
-    </ul>
+    <div class="section-item">
+        <div class="item-header">
+            <span>SMPI AL-I'TISHOM</span>
+            <span>2019 - 2022</span>
+        </div>
+    </div>
+
+    <!-- BAGIAN PENGALAMAN KERJA -->
+    <h2>Pengalaman Kerja</h2>
+    <div class="section-item">
+        <div class="item-header">
+            <span>CAFE 93 ENTREPRISE</span>
+            <span>Januari 2024</span>
+        </div>
+        <div class="item-subheader">Part-Time Barista & All-Round Crew</div>
+        <ul>
+            <li>Menangani operasional kasir dan pembayaran pelanggan dengan akurat.</li>
+            <li>Menyiapkan dan membuat berbagai varian minuman kopi sesuai standar kualitas kedai.</li>
+            <li>Melayani pelanggan dengan ramah, komunikatif, dan memastikan tingkat kepuasan yang tinggi.</li>
+            <li>Menjaga kebersihan, kerapian, dan kelancaran operasional di area kerja.</li>
+        </ul>
+    </div>
+
+    <div class="section-item">
+        <div class="item-header">
+            <span>PT SUGIURA INDONESIA</span>
+            <span>September 2023 - Maret 2024</span>
+        </div>
+        <div class="item-subheader">Quality Control & Assurance Intern (Magang PKL)</div>
+        <ul>
+            <li>Melakukan inspeksi kualitas material (coil, nut) serta produk industrial secara mendetail.</li>
+            <li>Menggunakan instrumen pengukuran presisi seperti mikrometer untuk memastikan standar ukuran produk.</li>
+            <li>Memproses sampel produk (cutting, grinding) untuk kebutuhan analisis kualitas (Quality Control) lebih lanjut.</li>
+            <li>Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) serta bekerja dengan teliti mengikuti Prosedur Operasional Standar (SOP) perusahaan.</li>
+        </ul>
+    </div>
+
+    <!-- BAGIAN KEAHLIAN & KETERAMPILAN -->
+    <h2>Keahlian & Keterampilan</h2>
+    <div class="skills-container">
+        <div class="skills-column">
+            <strong>Hard Skills (Teknis):</strong>
+            <ul>
+                <li>Quality Control & Product Inspection</li>
+                <li>Pengukuran Presisi (Measurements)</li>
+                <li>Merakit Sistem Mekatronika & Instalasi Listrik</li>
+                <li>Mengoperasikan Dobot Magician</li>
+                <li>Dasar-dasar K3 (Keselamatan & Kesehatan Kerja)</li>
+                <li>Dasar-dasar Pembuatan Kopi & Operasional Mesin</li>
+                <li>Operasional Mesin Kasir & Layanan Pelanggan</li>
+                <li>Microsoft Office (Excel, PowerPoint) & Dasar IT</li>
+            </ul>
+        </div>
+        <div class="skills-column">
+            <strong>Soft Skills:</strong>
+            <ul>
+                <li>Komunikasi yang Efektif (9/10)</li>
+                <li>Kerja Tim & Kepemimpinan (9/10)</li>
+                <li>Pekerja Keras & Cekatan (8/10)</li>
+                <li>Bekerja Cepat di Bawah Tekanan (Under Pressure)</li>
+                <li>Perhatian Terhadap Detail (Attention to Detail)</li>
+            </ul>
+            <br>
+            <strong>Bahasa:</strong>
+            <ul>
+                <li>Bahasa Indonesia (Aktif/Lancar - 10/10)</li>
+                <li>Bahasa Inggris (Dasar - 5/10)</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
